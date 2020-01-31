@@ -66,3 +66,21 @@ h3{
 .titulo h1, .titulo h2{
     margin:0;
 }
+
+.boat{
+    width: 8vw;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    animation: animate-sunnygo 30s infinite;
+
+}
+
+@keyframes animate-sunnygo {
+    0% {margin-left: 0;}
+    25% {margin-left: 90vw;}
+    50% {transform: scaleX(1);}
+    75% {margin-left: 0vw;}
+    100% {transform: scaleX(-1);}
+  }
